@@ -16,3 +16,5 @@ UserDetailsServiceImpl for Spring Basic Auth call for user
 EcomServiceImpl for User related CRUD operations
 dto.error for error response 
 
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
