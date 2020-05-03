@@ -16,5 +16,5 @@ UserDetailsServiceImpl for Spring Basic Auth call for user
 EcomServiceImpl for User related CRUD operations
 dto.error for error response 
 
-![Create User](https://github.com/senapatirupen/demosecurity/CreateUser.PNG?raw=true)
+![Create User](https://github.com/senapatirupen/demosecurity/CreateUser.PNG)
 
