@@ -8,13 +8,17 @@ This Application contains Spring Boot, Spring REST, Spring JPA, Spring Security
 > h2 in memory db is used for runtime support. It is having User and UserRole as two table.
 
 # About
-SecurityConfigRestWithJpa file for security config
-DemosecurityApplication for main startup
-UserDetailAuthController for controller
-RestExceptionHandler for exception handling
-UserDetailsServiceImpl for Spring Basic Auth call for user
-EcomServiceImpl for User related CRUD operations
-dto.error for error response 
-
-![Create User](CreateUser.PNG)
+SecurityConfigRestWithJpa file for security config,
+DemosecurityApplication for main startup,
+UserDetailAuthController for controller,
+RestExceptionHandler for exception handling,
+UserDetailsServiceImpl for Spring Basic Auth call for user,
+EcomServiceImpl for User related CRUD operations,
+dto.error for error response.
+# Pic Sign Up User
+![CreateUser](CreateUser.PNG)
+# Pic Sign In user with Basic Auth
+![SignInUserWithBasicAuth](SignInUserWithBasicAuth.PNG)
+# Pic Sign In user with Basic Auth 1
+![SignInUserWithBasicAuth1](SignInUserWithBasicAuth1.PNG)
 
