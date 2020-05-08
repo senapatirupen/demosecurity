@@ -20,5 +20,5 @@ dto.error for error response.
 # Pic Sign In user with Basic Auth
 ![SignInUserWithBasicAuth](signinwithbasicauth.PNG)
 # Pic Sign In user with Basic Auth 1
-![SignInUserWithBasicAuth1](aigninwithbasicauth1.PNG)
+![SignInUserWithBasicAuth1](aigninwithbasicauth2.PNG)
 
