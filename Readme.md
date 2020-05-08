@@ -16,9 +16,9 @@ UserDetailsServiceImpl for Spring Basic Auth call for user,
 EcomServiceImpl for User related CRUD operations,
 dto.error for error response.
 # Pic Sign Up User
-![CreateUser](CreateUser.PNG)
+![CreateUser](signup.PNG)
 # Pic Sign In user with Basic Auth
-![SignInUserWithBasicAuth](SignInUserWithBasicAuth.PNG)
+![SignInUserWithBasicAuth](signinwithbasicauth.PNG)
 # Pic Sign In user with Basic Auth 1
-![SignInUserWithBasicAuth1](SignInUserWithBasicAuth1.PNG)
+![SignInUserWithBasicAuth1](aigninwithbasicauth1.PNG)
 
