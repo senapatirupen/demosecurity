@@ -15,7 +15,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"firstName\": \"Rupen\",\n    \"lastName\": \"Senapati\",\n    \"dob\": \"2020-12-26\",\n    \"userName\": \"senapatirupen\",\n    \"emailId\": \"se@gmail.com\",\n    \"phoneNumber\": \"8147713018\",\n    \"password\": \"thispassword\",\n    \"rePassword\": \"thispassword\"\n}",
+					"raw": "{\n    \"firstName\": \"Rupen\",\n    \"lastName\": \"Senapati\",\n    \"dob\": \"2020-12-26\",\n    \"userName\": \"senapati\",\n    \"emailId\": \"se@gmail.com\",\n    \"phoneNumber\": \"8147713018\",\n    \"password\": \"thispassword\",\n    \"rePassword\": \"thispassword\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -40,13 +40,25 @@
 			"name": "signin update",
 			"request": {
 				"auth": {
-					"type": "noauth"
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "senapati",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "thispassword",
+							"type": "string"
+						}
+					]
 				},
 				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"firstName\": \"Rupen\",\n    \"lastName\": \"Senapati\",\n    \"dob\": \"2020-12-26\",\n    \"userName\": \"senapatirupen\",\n    \"emailId\": \"se@gmail.com\",\n    \"phoneNumber\": \"8147713018\",\n    \"password\": \"thispassword\",\n    \"repassword\": \"thispassword\"\n}",
+					"raw": "{\n\t\"usId\":\"1\",\n    \"firstName\": \"Rupen\",\n    \"lastName\": \"Senapati\",\n    \"dob\": \"2020-12-26\",\n    \"phoneNumber\": \"8147713018\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -54,14 +66,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9091/user",
+					"raw": "http://localhost:9091/signin/update",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9091",
 					"path": [
-						"user"
+						"signin",
+						"update"
 					]
 				}
 			},
@@ -89,7 +102,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"usId\":\"1\",\n    \"userName\": \"senapatirupen\",\n    \"emailId\": \"ses@gmail.com\"\n}",
+					"raw": "{\n\t\"usId\":\"1\",\n    \"password\": \"thispassword\",\n    \"rePassword\": \"thatpassword\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -114,6 +127,55 @@
 		},
 		{
 			"name": "signin",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "thispassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "senapatirupen",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZW5hcGF0aXJ1cGVuIiwiZXhwIjoxNTg4Njg0MjYzLCJpYXQiOjE1ODg2NjYyNjN9.n5PTUxTn341NnJ3Z4psqiI4O_1zE55MqTpa9ORJZ6XZeK1DqxE4DmTxrNnPGd09yOLd5EQ0N7goH5rRy5ReU6g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userNameOrEmailId\": \"senapati\",\n    \"password\": \"thispassword\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jwt authenticate",
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -272,7 +334,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"usId\":\"1\",\n    \"userName\": \"senapatirupen\",\n    \"emailId\": \"ses@gmail.com\"\n}",
+					"raw": "{\n\t\"usId\":\"1\",\n    \"userName\": \"senapatirupen1\",\n    \"emailId\": \"ses@gmail.com\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
